@@ -1,0 +1,57 @@
+:root {
+  --clr-primary-100: hsl(0, 0%, 100%);
+  --clr-primary-200: hsl(185, 75%, 39%);
+  --clr-primary-400: hsl(229, 23%, 23%);
+  --clr-primary-800: hsl(227, 10%, 46%);
+
+  --clr-neutral-100: hsl(0, 0%, 59%);
+
+  --ff-primary: 'Kumbh Sans', sans-serif;
+
+  --ff-body: var(--ff-primary);
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --fs-200: .625rem;
+  --fs-300: .875rem;
+  --fs-500: 1.125rem;
+}
+
+/* extra reset */
+
+html,
+body {
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* general styling */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary-200);
+}
+
+.pattern {
+  z-index: -1;
+}
+
+main {
+  min-width: 325px;
+  border-radius: 15px;
+  background-color: var(--clr-primary-100);
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 350px;
+  }
+}
